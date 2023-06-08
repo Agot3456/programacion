@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>priedra pael o tijera</title>
+    <script>
+        //funcion para las alertas
+        function alertaDeElecciones(quienElije,eleccion){
+          if(eleccion==1){
+             alert("el"+ quienelije+"eligio piedra")
+        } else if(eleccion==2){
+             alert("el"+ quienelije+"eligio papel")
+        } else if(eleccion==3){
+             alert("el"+ quienelije+"eligio tijera")
+        } else{
+            alert("el"+quienelije+"eligio piedra")
+        }
+    
+    } 
+    //funcion aliatorio      
+    function numeroAliatorio(min,max){ 
+        return Math. floor(Math.random()*(max-min+1)+min)
+
+    }
+    //funcion para decidir el ganador
+    function quienGanaEntre (eleccioDeGugador,eleccionPc){
+        if(eleccionJugador==eleccionPc){
+            alert("empate")
+        }else if(eleccionJugador==1 && eleccionPc==3){
+            alert("ganastes")
+        }else if(eleccionJugador==2 && eleccionPc==1){
+            alert("ganastes")
+        }else if(eleccionJugador==3 && eleccionPc==2){
+            alert("ganates")
+
+
+        } else{
+            alert("perdistes")
+        }
+    }   
+
+    //eleccion jugador
+    eleccionDeJ=0
+    eleccion=prompt("elije:1para piedra, elije:1para papel, elije: 1para piedra")
+    alertaDeElecciones("jugador",eleccionDeJugador)
+    paraDecidirElganador()
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
